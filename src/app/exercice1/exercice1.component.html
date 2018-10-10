@@ -1,0 +1,22 @@
+<p>
+  Exercice1
+  <br />
+  liaison attribut
+  <br />
+  <input type="text" [value]="affichageDefaut" />
+  <br />
+  liaison événement
+  <br />
+  <input type="button" value="Action" (click)="afficheAction()" />
+  <br />
+  liaison interpolation de variable
+  <br />
+  <input [value]="nom"
+      (input)="nom=$event.target.value" >
+  {{nom}}
+  <br />
+  ou 
+  <br />
+  <input type="text" [(ngModel)]="content">
+    {{ content }}
+</p>
